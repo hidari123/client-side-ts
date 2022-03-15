@@ -263,4 +263,5 @@ interface ClassE {
 }
 const classE = new ClassE()
 classE.getInfo('hihi', 'age')
+// 修饰的是 getInfo 的第2个参数
 ```
