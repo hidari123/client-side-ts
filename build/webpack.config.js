@@ -1,5 +1,6 @@
 const path = require('path'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
+    CopyWebpackPlugin = require('copy-webpack-plugin'),
     CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     mode: 'development',
@@ -43,11 +44,16 @@ module.exports = {
         port: 8080,
     },
     plugins: [
+        // @ts-ignore
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: ['./dist']
         }),
         new HtmlWebpackPlugin({
             template: './src/template/index.html'
-        })
+        }),
+        new CopyWebpackPlugin([{
+            from: path.join(__dirname,'../src/modules/handle-title.js'),
+            to: path.resolve(__dirname, '../dist')
+        }])
     ]
 };

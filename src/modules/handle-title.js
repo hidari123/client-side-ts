@@ -1,3 +1,4 @@
+// 全局库
 function setTitle(title) {
     document && (document.title = title) // document为真才会执行下面语句
 }
@@ -7,3 +8,4 @@ function getTitle() {
 }
 
 let documentTitle = getTitle()
+console.log(123)
