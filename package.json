@@ -30,6 +30,7 @@
     "clean-webpack-plugin": "^2.0.2",
     "cross-env": "^7.0.3",
     "html-webpack-plugin": "^3.2.0",
+    "indexof": "^0.0.1",
     "ts-loader": "^7.0.5",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1",
