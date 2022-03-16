@@ -1,0 +1,17 @@
+{
+  "name": "hidari-array-map",
+  "version": "1.0.0",
+  "description": "array map function use ts",
+  "main": "./dist/hidari-array-map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hidari"
+  ],
+  "author": "hidari",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
